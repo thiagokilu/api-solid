@@ -1,0 +1,42 @@
+{
+	"name": "03-api-solid",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src/server.ts",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "^11.8.0",
+			"onFail": "download"
+		}
+	},
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.8",
+		"@types/node": "^26.2.0",
+		"@vitest/coverage-v8": "^4.1.10",
+		"globals": "^17.11.0",
+		"jiti": "^2.7.0",
+		"tsup": "^8.5.1",
+		"tsx": "^4.23.12",
+		"typescript": "^6.0.3",
+		"vitest": "^4.1.10"
+	},
+	"dependencies": {
+		"dotenv": "^17.4.2",
+		"fastify": "^5.12.0",
+		"zod": "^4.4.3"
+	}
+}
